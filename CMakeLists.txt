@@ -7,7 +7,7 @@ set(CXX_FLAGS "-Wall")
 set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 
 include_directories(include/)
-set(sources src/ukf.cpp src/main.cpp src/io.cpp)
+set(sources src/main.cpp src/io.cpp src/ukf.cpp)
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
   include_directories(/usr/local/include)
