@@ -30,7 +30,7 @@ SimIO::SimIO(int port, ProcessCb cb) : port_(port), callbackFunc_(cb) {
           double heading_diff, distance_diff;
           std::tie(heading_diff, distance_diff) = callbackFunc_(hunter_x,
             hunter_y, hunter_heading, lidar_measurement, radar_measurement);
-            
+
           // send output
           nlohmann::json msgJson;
           msgJson["turn"] = heading_diff;
